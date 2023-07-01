@@ -1,0 +1,126 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-primary: #0E2954;
+    --bg-secondary: #1F6E8C;
+    --text-primary: #eeeeee;
+    --text-secondary: #343434;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: lighter;
+    margin-bottom: 1.25rem;
+}
+
+h1 {
+    font-weight: lighter;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+html,
+body {
+    font-family: 'Geologica';
+    font-weight: lighter;
+    font-size: 1.173rem;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+}
+
+.p-default {
+    padding: 2rem;
+}
+
+header {
+    display: flex;
+    background-color: var(--bg-primar);
+    color: var(--text-primary);
+}
+
+.header-col:first-child {
+    flex: 1 1 auto;
+    padding-right: 2rem;
+}
+
+.header-col:last-child {
+    flex: 0 1 40%;
+}
+
+.header-image {
+    background-color: var(--bg-secondary);
+    width: 100%;
+    height: 100%;
+}
+
+#advantages-list {
+    font-size: 1.25rem;
+    list-style-type: disc;
+}
+
+#about {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.about-col {
+    width: 30%;
+}
+
+.about-col:first-child {
+    width: 70%;
+}
+
+.about-image {
+    background-color: var(--bg-secondary);
+    width: 100%;
+    height: 100%;
+}
+
+#pluses {
+    background-color: var(--bg-primary);
+}
+
+#pluses h2 {
+    text-align: center;
+}
+
+#pluses-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.pluses-grid-item {
+    display: flex;
+}
+
+.pluses-grid-item-col:first-child {
+    flex: 0 1 auto;
+}
+
+.pluses-grid-item-col:last-child {
+    flex: 1 1 auto;
+    margin-left: .5rem;
+}
+
+.pluses-grid-item-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    background-color: var(--bd-secondary);
+    text-align: center;
+    line-height: 2rem;
+}
